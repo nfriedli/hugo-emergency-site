@@ -209,9 +209,7 @@
         .header,
         .main,
         .footer {
-            padding: var(--spacing); = "
-         = "
-         = "
+            padding: var(--spacing);
         }
         
         .header {
@@ -271,8 +269,9 @@
         {{ with .Site.Author.phone }}
             <p><a href="tel:{{ . }}">{{ . }}</a></p>
         {{ end }}
+        </div>
         <div>
-            <p>Last Update: XXX</p>
+            <p>Dernière mise à jour: {{ now.Format "02.01.2006" }}</p>
         </div>
     </footer>
 </body>

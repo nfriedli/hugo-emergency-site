@@ -3,8 +3,8 @@
 <article class="post h-entry">
     <header>
         <h1 class="p-name">{{ .Title | markdownify }}</h1>
-        <time class="dt-published" datetime="{{ .Date }}">
-            {{ .Date }}
+        <time class="dt-published" datetime="{{ .Date.Format "2006-01-02" }}">
+            {{ .Date.Format "02.01.2006"}}
         </time>
     </header>
     

@@ -1,0 +1,4 @@
+enableGitInfo: true
+
+minify:
+  minifyOutput: true

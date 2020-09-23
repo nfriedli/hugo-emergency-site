@@ -1,16 +1,21 @@
 baseURL: http://example.org/
-languageCode: fr-ch
 title: Site d'urgence avec Hugo
+
+languageCode: fr
+defaultContentLanguage: fr
 
 author:
   name: Nicolas Friedli
   email: nicolasfriedli@protonmail.ch
   phone: +41 32 481 48 74
 
+canonifyURLs: true
+disableFastRender: true
+
 disableKinds:
   - taxonomy
   - taxonomyTerm
-
+  
 markup:
   defaultMarkdownHandler: goldmark
   goldmark:
