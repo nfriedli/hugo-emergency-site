@@ -1,0 +1,12 @@
+<footer class="footer">
+    <div>
+    {{ with .Site.Author.email }}
+        <p><a href="mailto:{{ . }}">{{ . }}</a></p>
+    {{ end }}
+    {{ with .Site.Author.phone }}
+        <p><a href="tel:{{ . }}">{{ . }}</a></p>
+    {{ end }}
+    <div>
+        <p>Last Update: XXX</p>
+    </div>
+</footer>

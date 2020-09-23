@@ -1,0 +1,24 @@
+baseURL: http://example.org/
+languageCode: fr-ch
+title: Site d'urgence avec Hugo
+
+author:
+  name: Nicolas Friedli
+  email: nicolasfriedli@protonmail.ch
+  phone: +41 32 481 48 74
+
+disableKinds:
+  - taxonomy
+  - taxonomyTerm
+
+markup:
+  defaultMarkdownHandler: goldmark
+  goldmark:
+    extensions:
+      typographer: true
+    parser:
+      autoHeadingIDType: github-ascii
+
+params:
+  title: Site d'urgence avec Hugo
+  description: Copier Max Böck pour apprendre!
